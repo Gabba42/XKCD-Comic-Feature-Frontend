@@ -14,7 +14,7 @@ export class AppComponent {
   title = 'XKCD Comic';
 
   constructor(private xkcdService: XkcdServiceService) {
-    this.getCurrentComic(); 
+    this.getCurrentComic();
   }
 
   getCurrentComic() {

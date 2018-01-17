@@ -1,0 +1,12 @@
+
+<div style="text-align: center">
+  <h3> {{title}} </h3>
+</div>
+
+<div style="text-align: center">
+  <button class="btn btn-primary" (click)="showComicStrip()">Click For Current XKCD Comic</button>
+    <div *ngIf="showComic" >
+      <h3>"{{this.xkcdComic.title}}"</h3> 
+      <img alt="{{this.xkcdComic.alt}}" src="{{this.xkcdComic.img}}" style="padding-bottom: 2em">
+  </div>
+</div>
